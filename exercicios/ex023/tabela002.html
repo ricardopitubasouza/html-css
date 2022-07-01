@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -30,9 +31,21 @@
             text-align: right;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            /* Aqui fixou-se o cabeçalho ao topo */
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n){  
+            /* Aqui também pode ser usado (even) para linhas pares ou (odd) para linhas impares, no lugar do (2n) e com estas duas condições podemos fazer pares de uma cor e impares de outra, basta fazer outro tbody > tr:nth-child() conjugado */ 
+            background-color: lightgray;
         }
     </style>
 </head>
