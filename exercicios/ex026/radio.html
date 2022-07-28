@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" contenteditable="Exercício com Radio e check box">
+        <title>Formulário</title>
+        <style>
+            legend{
+                font-weight: bold;
+            }
+            fieldset{
+                margin-bottom: 15px;
+            }
+            #sexo{
+                width: 150px;
+            }
+            #esport{
+                width: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+                 <fieldset id="sexo">
+                    <legend>Sexo</legend>
+                    <div><input type="radio" name="sexo" id="isxmas" value="Masculino" checked><label for="isxmas">Masculino</label></div>
+                    <div><input type="radio" name="sexo" id="isfem" value="Feminino"><label for="isfem">Feminino</label></div>
+                 </fieldset>
+                <fieldset id="esport">
+                    <legend>Esportes favoritos</legend>
+                    <div><input type="checkbox" name="esbas" id="iesbas" checked><label for="iesbas">Basquete</label></div>
+                    <div><input type="checkbox" name="estuf" id="iestuf" checked><label for="iestuf">Futebol</label></div>
+                    <div><input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label></div>
+                    <div><input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label></div> 
+                </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </body>
+</html>

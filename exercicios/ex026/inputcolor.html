@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Exercício com input tipo color">
+        <title>Input color</title>
+    </head>
+    <body>
+        <h1>Exemplo de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            <p>
+                <label for="inivel">Nível de Satisfação</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="2">
+            </p>
+            <p>
+                <label for="ifoto">Foto do perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+            <p>Sempre que se for usar arquivos que passem de 3 mil bytes, deve ser usado o método <strong>POST</strong>, por tanto o input tipo file, deve de ser usado, usando POST</p>
+        </form>
+    </body>
+</html>
