@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Menu responsivo html5-css">
-        <link rel="stylesheet" href="estilos/style.css">
         <title>Menu responsivo</title>
+        <link rel="stylesheet" href="estilos/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     </head>
     <body>
         <header>
             <h1>Meu Site</h1>
-            <menu>
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <menu id="itens">
                 <ul type = none>
                     <li><a href="#">Opção 1</a></li>
                     <li><a href="#">Opção 2</a></li>
@@ -28,5 +31,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus delectus perferendis sed impedit tempore facilis quibusdam natus alias sint officiis, eligendi autem, distinctio numquam? Tempore accusantium corrupti ea et asperiores nobis amet ipsa? Itaque officia nisi, voluptatum laudantium officiis dignissimos rem ducimus illum perferendis voluptatem voluptas velit alias eos totam quae aliquam sit. Quo, cumque? Dolorum qui repellendus culpa libero esse accusantium nemo pariatur illo saepe sed voluptatum eveniet sunt omnis, ad suscipit nostrum voluptates. Aut beatae, nesciunt porro illo in, eos sit eaque at repellat nihil ex explicabo, alias totam quos neque officia! Ex rem quisquam a exercitationem autem, doloremque possimus id deleniti natus, voluptas inventore quod aspernatur ducimus, suscipit doloribus sapiente modi debitis culpa dicta necessitatibus explicabo.</p>
             </article>
         </main>
+        <script>
+            function clickMenu() {
+                if(itens.style.display == 'block'){
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+                 
+            }
+        </script>
     </body>
 </html>
