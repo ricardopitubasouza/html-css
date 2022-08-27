@@ -12,6 +12,11 @@
     menu > ul > li{
         display: inline-block;
         width: 100px;
+    } 
+
+    menu > ul > li > a {
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(19, 19, 19, 0.658);
     }
 
     li + li{
